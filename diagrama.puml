@@ -1,0 +1,14 @@
+@startuml diagrama
+
+class Humano
+class Foco{
+    - EstadoFoco estado
+    + Encender()
+    + Apagar()
+    + EstadoFoco: MostrarEstado()
+}
+
+Humano o-- Foco
+Foco *-- EstadoFoco
+
+@enduml
